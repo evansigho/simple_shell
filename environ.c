@@ -42,7 +42,7 @@ char *_getenv(info_t *info, const char *name)
  * Return: Always 0
  */
 
-int _mysetenv(info_t *info)\
+int _mysetenv(info_t *info)
 {
 	if (info->argc != 3)
 	{

@@ -17,30 +17,10 @@ void _eputs(char *str)
 		_eputchar(str[i]);
 		i++;
 	}
-
 }
 
 /**
- * _eputs - prints an input string
- * @str: the string to be printed
- *
- * Return: Nothing
- */
-void _eputs(char *str)
-{
-	int i = 0;
-
-	if (!str)
-		return;
-	while (str[i] != '\0')
-	{
-		_eputchar(str[i]);
-		i++;
-	}
-}
-
-/**
- * C
+ * _eputchar - writes the character c to stderr
  * @c: The character to print
  *
  * Return: On success 1.
