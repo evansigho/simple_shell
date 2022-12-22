@@ -81,8 +81,7 @@ int print_d(int input, int fd)
 	}
 	__putchar('0' + current);
 	count++;
-
-
+	return (count);
 }
 
 /**
@@ -98,6 +97,7 @@ char *convert_number(long int num, int base, int flags)
 	static char *array;
 	static char buffer[50];
 	char sign = 0;
+	char *ptr;
 	unsigned long n = num;
 
 	if (!(flags & CONVERT_UNSIGNED) && num < 0)

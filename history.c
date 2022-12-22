@@ -99,7 +99,7 @@ int read_history(info_t *info)
 	while (info->histcount-- >= HIST_MAX)
 		delete_node_at_index(&(info->history), 0);
 	renumber_history(info);
-
+	return (info->histcount);
 }
 
 /**
@@ -120,7 +120,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
 
 	if (!info->history)
 		info->history = node;
-
+	return (0);
 }
 
 /**
