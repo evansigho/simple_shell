@@ -18,7 +18,7 @@ int _myenv(info_t *info)
  * @name: env var name
  *
  * Return: the value
- */.
+ */
 char *_getenv(info_t *info, const char *name)
 {
 	list_t *node = info->env;
@@ -91,3 +91,4 @@ int populate_env_list(info_t *info)
 	info->env = node;
 	return (0);
 }
+
